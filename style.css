@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---------- Header and navigation ---------- */
+.logo {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.logo img {
+  width: 120px;
+}
+
+nav {
+  background-color: darkslategray;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/kilimanjaro.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkcyan;
+}
+
+/* ---------- Destination cards ---------- */
+.destinations {
+  padding: 50px 0;
+}
+
+.destinations h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card {
+  width: calc(25% - 15px);
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: teal;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+footer p {
+  padding: 15px;
+  background-color: darkslategray;
+  color: white;
+  text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (min-width: 751px) and (max-width: 1000px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 750px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+.signup {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.signup h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+form {
+  max-width: 450px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  border-color: teal;
+  outline: none;
+}
+
+.group-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  display: inline;
+  font-weight: normal;
+  margin: 0 10px 0 0;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  display: inline;
+  font-weight: normal;
+  margin: 0;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+}
+
+.login-note {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.login-note a {
+  color: teal;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-note a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  form {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+/* ---------- Shared page banner ---------- */
+.page-banner {
+  height: 250px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(images/spain.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* ---------- About page ---------- */
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.about-intro img {
+  width: 50%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-intro div {
+  width: 50%;
+}
+
+.about-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-intro p {
+  margin-bottom: 10px;
+}
+
+.values {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.values h2 {
+  font-size: 2rem;
+}
+
+.value-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.value-card {
+  width: 32%;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.value-card h3 {
+  font-size: 1.2rem;
+  color: teal;
+  margin-bottom: 5px;
+}
+
+/* ---------- Contact page ---------- */
+.contact {
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  margin: 50px auto;
+}
+
+.contact-info {
+  width: 40%;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.info-item {
+  margin-top: 20px;
+}
+
+.info-item h3 {
+  font-size: 1.2rem;
+  color: teal;
+}
+
+.contact-form {
+  width: 60%;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: teal;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 800px) {
+  .page-banner h1 {
+    font-size: 2rem;
+  }
+
+  .about-intro,
+  .contact {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .about-intro img,
+  .about-intro div,
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .value-cards {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .value-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

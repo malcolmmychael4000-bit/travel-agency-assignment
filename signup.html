@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Traveltastic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Traveltastic logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="signup">
+    <h2>Create Your Account</h2>
+    <p>Sign up to book trips and get travel deals.</p>
+
+    <form action="#" method="post">
+      <label for="fullname">Full name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="At least 8 characters" required>
+
+      <label for="destination">Dream destination</label>
+      <select id="destination" name="destination">
+        <option value="">Choose a destination</option>
+        <option value="dubai">Dubai</option>
+        <option value="mombasa">Mombasa</option>
+        <option value="paris">Paris</option>
+        <option value="spain">Spain</option>
+        <option value="kilimanjaro">Mount Kilimanjaro</option>
+      </select>
+
+      <p class="group-title">Gender</p>
+      <div class="radio-group">
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+      </div>
+
+      <button type="submit">Sign Up</button>
+
+      <p class="login-note">Already have an account? <a href="#">Log in</a></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Copyright Reserved for Traveltastic.</p>
+  </footer>
+</body>
+
+</html>

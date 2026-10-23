@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Traveltastic</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Traveltastic logo">
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#destinations">Destinations</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-banner">
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="contact">
+    <div class="contact-info">
+      <h2>Get in Touch</h2>
+      <p>Have a question about a trip? Send us a message and we will reply within one working day.</p>
+
+      <div class="info-item">
+        <h3>Address</h3>
+        <p>12 Safari Road, Kampala, Uganda</p>
+      </div>
+
+      <div class="info-item">
+        <h3>Phone</h3>
+        <p>+256 700 000 000</p>
+      </div>
+
+      <div class="info-item">
+        <h3>Email</h3>
+        <p>hello@traveltastic.com</p>
+      </div>
+
+      <div class="info-item">
+        <h3>Opening Hours</h3>
+        <p>Monday to Saturday, 8:00 am to 6:00 pm</p>
+      </div>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Your name</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+      <label for="subject">Subject</label>
+      <select id="subject" name="subject">
+        <option value="booking">Booking enquiry</option>
+        <option value="support">Support for a current trip</option>
+        <option value="feedback">Feedback</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Copyright Reserved for Traveltastic.</p>
+  </footer>
+</body>
+
+</html>
