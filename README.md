@@ -1,2 +1,2 @@
 # travel-agency-assignment
-HTML and CSS practice ce assignment
+HTML and CSS practice assignment
